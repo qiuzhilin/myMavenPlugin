@@ -26,17 +26,21 @@ public class ReplaceStrPlugin extends AbstractMojo {
         this.getLog().info("changeFiles:"+changeFiles);
         this.getLog().info("sourceStrings:"+sourceStrings);
         this.getLog().info("targetStrings:"+targetStrings);
+        boolean checkFlag=true;
         //check parameter
         if(StringUtils.isEmpty(changeFiles)){
             this.getLog().error("changeFiles is empty");
+            checkFlag=false;
         }
         if(StringUtils.isEmpty(sourceStrings)){
             this.getLog().error("sourceStrings is empty");
+            checkFlag=false;
         }
         if(StringUtils.isEmpty(sourceStrings)){
             this.getLog().error("targetStrings is empty");
+            checkFlag=false;
         }
-        if(StringUtils.isEmpty(changeFiles)||StringUtils.isEmpty(sourceStrings)||StringUtils.isEmpty(targetStrings)){
+        if(!checkFlag){
             return;
         }
         String[] fileArray=changeFiles.split(",");
