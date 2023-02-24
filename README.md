@@ -8,9 +8,9 @@
 ![image](https://user-images.githubusercontent.com/17595316/221070861-73d5da39-c420-4150-b17f-f23cbf3fc59f.png)
 
 # 关键字段说明
-<phase> 表示该插件执行时机是compile阶段
-<goal>表示执行插件包中的类，跟@Mojo 的name 值关联，如果有多个执行类，那就配置多个goal
-<configuration> 下面的是自定义的参数，
-changeFiles 是需要执行替换操作文件的全路径，如果是多个文件，可以用逗号分隔
-sourceStrings 是替换的源字符，多个可以用逗号分隔，个数要与targetStrings保持一致
-targetStrings 是替换的模板字符，多个可以用个逗号分隔，个数要与sourceStrings 保持一致
+- <phase> 表示该插件执行时机是compile阶段
+- <goal>表示执行插件包中的类，跟@Mojo 的name 值关联，如果有多个执行类，那就配置多个goal
+- <configuration> 下面的是自定义的参数，
+- changeFiles 是需要执行替换操作文件的全路径，如果是多个文件，可以用逗号分隔
+- sourceStrings 是替换的源字符，多个可以用逗号分隔，个数要与targetStrings保持一致
+- targetStrings 是替换的模板字符，多个可以用个逗号分隔，个数要与sourceStrings 保持一致
