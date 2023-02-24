@@ -1,5 +1,5 @@
 # myMavenPlugin
-自定义maven插件，主要实现编译后，可以对指定文件进行内部字符串匹配。
+自定义maven插件，主要实现编译后，可以对指定文件进行内部字符串替换，可以根据不同的编译环境，替换不同的字符串值。
 
 # maven 自定义插件的关键步骤
 继承`org.apache.maven.plugin.AbstractMojo`这个抽象类，同时需要在类上面使用@Mojo注解
